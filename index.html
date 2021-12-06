@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+<!-- HEADER (ШАПКА) --------------------------------------------- -->
 <header class="header">
     <div class="container main-nav">
         <nav class="header-navigation">
@@ -45,7 +46,7 @@
 </header>
 
 <main>
-<!-- СЕКЦИЯ 1 HERO (ГЛАВНЫЙ ЭКРАН) -->
+<!-- СЕКЦИЯ 1 HERO (ГЛАВНЫЙ ЭКРАН) ------------------------------ -->
 <section class="hero hero-background">
     <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -53,7 +54,7 @@
     </div>
 </section>
 
-<!-- СЕКЦИЯ 2 ПРЕИМУЩЕСТВА (скрыть заголовок) -->
+<!-- СЕКЦИЯ 2 ПРЕИМУЩЕСТВА (скрыть заголовок) ------------------- -->
 <section class="section advantage-section">
     <div class="container">
         <!-- <h2 class="section-title">Преимущества</h2> -->
@@ -98,7 +99,7 @@
     </div>
 </section>
 
-<!-- СЕКЦИЯ 3 ЧЕМ МЫ ЗАНИМАЕМСЯ -->
+<!-- СЕКЦИЯ 3 ЧЕМ МЫ ЗАНИМАЕМСЯ --------------------------------- -->
 <section class="section">
     <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
@@ -125,7 +126,7 @@
     </div>
 </section>
 
-<!-- СЕКЦИЯ 4 НАША КОМАНДА -->
+<!-- СЕКЦИЯ 4 НАША КОМАНДА -------------------------------------- -->
 <section class="section team">
     <div class="container">
         <h2 class="section-title">Наша команда</h2>
@@ -282,7 +283,7 @@
     </div>
 </section>
 
-<!-- СЕКЦИЯ 5 ПОСТОЯННЫЕ КЛИЕНТЫ -->
+<!-- СЕКЦИЯ 5 ПОСТОЯННЫЕ КЛИЕНТЫ -------------------------------- -->
 <section class="section clients">
     <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
@@ -334,7 +335,7 @@
 </section>
 </main>
 
-<!-- FOOTER (ПОДВАЛ) -->
+<!-- FOOTER (ПОДВАЛ) -------------------------------------------- -->
 <footer class="footer">
     <div class="container logo-address-social">
         <div>
@@ -401,7 +402,7 @@
     </div>
 </footer>
 
-<!-- МОДАЛЬНОЕ ОКНО -->
+<!-- МОДАЛЬНОЕ ОКНО --------------------------------------------- -->
  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-button-close" data-modal-close>
@@ -410,51 +411,44 @@
             </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form" autocomplete="off">
         <div class="form-field">
             <label class="form-label" for="name">Имя</label>
-            <input class="modal-input" type="text" id="name" name="user-name" />
-            <svg class="modal-icon">
-                <use href=./images/icons.svg#icon-modal-person></use>
+            <input class="form-input" type="text" id="name" name="user-name" />
+            <svg class="form-icon">
+                <use href=./images/icons.svg#icon-modal-name></use>
             </svg>
         </div>
         <div class="form-field">
-            <label class="form-label" for="tel">Телефон
-            </label>
-            <input class="modal-input" type="tel" id="tel" />
-            <svg class="modal-icon">
-                <use href=./images/icons.svg#icon-modal-phone></use>
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" id="tel" name="user-tel" />
+            <svg class="form-icon">
+                <use href=./images/icons.svg#icon-modal-tel></use>
             </svg>
         </div>
         <div class="form-field">
-            <label class="form-label" for="email">Почта
-            </label>
-            <input class="modal-input" type="email" name="Почта" id="email" />
-            <svg class="modal-icon">
+            <label class="form-label" for="mail">Почта</label>
+            <input class="form-input" type="email" id="mail" name="user-mail" />
+            <svg class="form-icon">
                 <use href=./images/icons.svg#icon-modal-mail></use>
             </svg>
         </div>
         <div class="form-field-comments">
-            <label class="form-label" for="comments"> Коментарий </label><textarea name="Коментарий" id="comments"
-                placeholder="Введите текст"></textarea>
+            <label class="form-label" for="comments">Комментарий</label>
+            <textarea class="form-comments" name="Комментарий" id="comments" placeholder="Введите текст"></textarea>
         </div>
-        <div class="form-checkbox">
-            <label class="form-label-checkbox">
-                <input type="checkbox" class="checkbox" />
-                <svg class="modal-icon-check">
+        <div class="checkbox-form">
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" />
+                <svg class="checkbox-icon">
                     <use href=./images/icons.svg#icon-modal-policy></use>
                 </svg>
                 <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
             </label>
-            <a href=".#" class="modal-checkbox-link">Условия договора</a>
+            <a href=".#" class="checkbox-link">Условия договора</a>
         </div>
-        <button class="modal-button-form" type="submit">Отправить</button>
+        <button type="submit" class="modal-button-form">Отправить</button>
         </form>
-
-
-
-
-
-
     </div>
 </div>
 
