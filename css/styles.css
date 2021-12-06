@@ -875,7 +875,7 @@ ul {
   border-color: var(--color-accent);
 }
 
-.form-input:focus + .modal-icon {
+.form-input:focus + .form-icon {
   fill: var(--color-accent);
 }
 
